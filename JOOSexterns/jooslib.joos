@@ -1,0 +1,395 @@
+// -----------------------------------------------------------------
+// The following external classes have been written in Java and
+//   compiled to make a directory of class files that can be
+//   accessed from JOOS programs.
+// -----------------------------------------------------------------
+// Oct 1st 2004 - added start() to JoosThread
+
+extern public class JoosObject in "joos.lib" {
+  public JoosObject(Object myObject);
+  // returns true if interrupted 
+  public final boolean wait(int timeout);
+}
+
+extern public class JoosString in "joos.lib" {
+  public JoosString(String value);
+  public boolean string2Bool();
+  public int string2Int();
+  public String valueOf();
+}
+
+extern public class JoosIO in "joos.lib" {
+  public JoosIO();
+  public void print(String str);
+  public void println(String str);
+  public void flush();
+  public int readInt();
+  public boolean readBoolean();
+  public String readLine(); 
+}
+
+extern public class JoosRandom in "joos.lib" {
+  public JoosRandom();
+  public JoosRandom(int seed);
+  public int nextInt();
+  public synchronized void setSeed(int seed);
+}
+  
+extern public class JoosRandomAccessFile in "joos.lib" {
+  public JoosRandomAccessFile (String name, String mode ) ;
+  public void close();
+  public int length ();
+  public int read ();
+  public boolean readBoolean();
+  public int readInt();
+  public String readLine();
+  public String readUTF ();
+  public int readUnsignedByte();
+  public int readUnsignedShort();
+  public void seek(int pos);
+  public int skipBytes(int n);
+  public void write(int b);
+  public void writeBoolean(boolean v);
+  public void writeByte(int v);
+  public void writeBytes(String s);
+  public void writeChar(int v);
+  public void writeChars(String s);
+  public void writeInt(int v);
+  public void writeShort(int v);
+  public void writeUTF(String str);
+}
+
+
+extern public abstract class JoosRunnable extends Runnable in "joos.lib" {
+  public JoosRunnable();
+  public abstract void run();
+}
+
+extern public class JoosThread in "joos.lib" {
+  public JoosThread(Thread t);
+  // get at constants
+  public int MAX_PRIORITY();
+  public int MIN_PRIORITY();
+  public int NORM_PRIORITY();
+  // get at static methods
+  public int activeCount();
+  public Thread currentThread();
+  public void dumpStack();
+  public boolean sleep(int millis);  // returns true if interrupted
+  public void yield();
+  // make a join that takes an int argument and returns bool
+  public synchronized boolean join(int millis); //  returns true if interrupted
+	public final void start();
+}
+  
+extern public class JoosFraction in "joos.lib" {
+  public JoosFraction(int top, int bot);
+  public int top();
+  public int bot();
+  public void setTop(int t);
+  public void setBot(int b);
+}
+
+extern public class JoosConstants in "joos.lib" {
+  public JoosConstants(); 
+
+  // constants from java.math.BigDecimal
+  public int ROUND_CEILING();        
+  public int ROUND_DOWN();           
+  public int ROUND_FLOOR();          
+  public int ROUND_HALF_DOWN();      
+  public int ROUND_HALF_EVEN();      
+  public int ROUND_HALF_UP();        
+  public int ROUND_UNNECESSARY();    
+  public int ROUND_UP();              
+  
+  // from java.awt.Color
+  public Color black();
+  public Color blue();
+  public Color cyan();
+  public Color darkGray();
+  public Color gray();
+  public Color green();
+  public Color lightGray();
+  public Color magenta();
+  public Color orange();
+  public Color pink();
+  public Color red();
+  public Color white();
+  public Color yellow();
+ 
+  // from java.awt.Event
+  public int ACTION_EVENT();
+  public int GOT_FOCUS();
+  public int LOST_FOCUS(); 
+  public int KEY_ACTION();
+  public int KEY_ACTION_RELEASE(); 
+  public int KEY_PRESS(); 
+  public int KEY_RELEASE(); 
+  public int LIST_SELECT(); 
+  public int LIST_DESELECT();
+  public int LOAD_FILE(); 
+  public int SAVE_FILE(); 
+  public int MOUSE_DOWN();
+  public int MOUSE_UP();
+  public int MOUSE_DRAG();
+  public int MOUSE_MOVE();
+  public int MOUSE_ENTER();
+  public int MOUSE_EXIT();
+  public int SCROLL_ABSOLUTE();
+  public int SCROLL_LINE_UP();
+  public int SCROLL_LINE_DOWN();
+  public int SCROLL_PAGE_UP();
+  public int SCROLL_PAGE_DOWN();
+  public int WINDOW_EXPOSE();
+  public int WINDOW_ICONIFY();
+  public int WINDOW_DEICONIFY();
+  public int WINDOW_DESTROY();
+  public int WINDOW_MOVED();
+
+  public int ALT_MASK();
+  public int CTRL_MASK();
+  public int META_MASK();
+  public int SHIFT_MASK();
+ 
+  public int F1();
+  public int F2();
+  public int F3();
+  public int F4();
+  public int F5();
+  public int F6();
+  public int F7();
+  public int F8();
+  public int F9();
+  public int F10();
+  public int F11();
+  public int F12();
+
+  public int LEFT();
+  public int RIGHT();
+  public int UP();
+  public int DOWN();
+  public int HOME();
+  public int END();
+  public int PGUP();
+  public int PGDN();
+
+  // from java.awt.Font
+  public int BOLD();
+  public int ITALIC();
+  public int PLAIN();
+
+  // from java.awt.Frame
+  public int CROSSHAIR_CURSOR();
+  public int DEFAULT_CURSOR();
+  public int E_RESIZE_CURSOR();
+  public int HAND_CURSOR(); 
+  public int MOVE_CURSOR();
+  public int NE_RESIZE_CURSOR();
+  public int NW_RESIZE_CURSOR();
+  public int N_RESIZE_CURSOR();
+  public int SE_RESIZE_CURSOR(); 
+  public int SW_RESIZE_CURSOR();
+  public int S_RESIZE_CURSOR(); 
+  public int TEXT_CURSOR(); 
+  public int WAIT_CURSOR();
+  public int W_RESIZE_CURSOR();
+
+  // from java.awt.Label
+  public int LABEL_CENTER();
+  public int LABEL_LEFT();
+  public int LABEL_RIGHT();
+
+  // from java.awt.ScrollPane
+  public int SCROLLBRS_ALWAYS();
+  public int SCROLLBRS_AS_NEEDED();
+  public int SCROLLBRS_NEVER();
+
+  // from java.awt.Scrollbar
+  public int SCROLLBAR_HORIZONTAL();
+  public int SCROLLBAR_VERTICAL();
+
+  // from java.awt.FileDiaglog
+  public int LOAD();
+  public int SAVE();
+
+  // from java.awt.FlowLayout
+  public int FLOWLAYOUT_CENTER();
+  public int FLOWLAYOUT_LEFT();
+  public int FLOWLAYOUT_RIGHT();
+  
+  // from java.awt.GridBagConstraints
+  public int GRIDBAGCONSTRAINTS_CENTER();
+  public int EAST();
+  public int NORTH();
+  public int NORTHEAST();
+  public int NORTHWEST();
+  public int SOUTH();
+  public int SOUTHEAST();
+  public int SOUTHWEST();
+  public int WEST();
+  public int GRIDBAGCONSTRAINTS_HORIZONTAL();
+  public int GRIDBAGCONSTRAINTS_VERTICAL();
+  public int BOTH();
+  public int NONE();
+  public int RELATIVE();
+  public int REMAINDER();
+
+  // from java.awt.Image
+  public Object UndefinedProperty();
+
+  // from java.awt.MediaTracker
+  public int ABORTED();
+  public int COMPLETE();
+  public int ERRORED();
+  public int LOADING();
+
+}
+
+
+// to get at several things in java.lang.System
+extern public final class JoosSystem in "joos.lib" {
+  public JoosSystem();
+  public int currentTimeMillis(); // is long in java
+  public void gc();
+  public void runFinalization();
+  public void exit(int value);
+}
+
+// to get at public instanct variables in a Dimension
+extern public class JoosDimension extends Object in "joos.lib" {
+  // Constructor
+  public JoosDimension(Dimension d);
+
+  // get values 
+  public int height();
+  public int width();
+
+  // set values
+  public void setWidth(int width);
+  public void setHeight(int height);
+
+  // get Dimension
+  public Dimension getDimension();
+
+}
+
+// to get at public instance variables in an Event 
+extern public class JoosEvent extends Object in "joos.lib" {
+  // Constructor
+  public JoosEvent(Event e);
+
+  // get values
+  public Object arg();
+  public int clickCount();
+  public Event evt();
+  public int id();
+  public int key();
+  public int modifiers();
+  public Object target();
+  public int when();  // is long in java
+  public int x();
+  public int y();
+
+  // set values
+  public void setArg(Object arg);
+  public void setClickCount(int count);
+  public void setEvent(Event e);
+  public void setId(int id);
+  public void setKey(int key);
+  public void setModifiers(int modifiers);
+  public void setTarget(Object target);
+  public void setWhen(int when);
+  public void setX(int x);
+  public void setY(int y);
+
+  public Event getEvent();
+}
+ 
+// to get at methods add(String name, Component comp);
+//   and             add(Componenet comp, int pos); 
+extern public class JoosContainer extends Object in "joos.lib" {
+  public JoosContainer(Container c);
+  public Component addString(String name, Component comp);
+  public Component addPosition(Component comp, int pos);
+}
+
+// to get at public instance variables in a GridBagConstraints 
+extern public class JoosGridBagConstraints extends Object 
+                      in "joos.lib" {
+
+  // Constructor
+  public JoosGridBagConstraints(GridBagConstraints c);
+
+  // getting the values from fields
+  public int anchor();
+  public int fill();
+  public int gridheight();
+  public int gridwidth();
+  public int gridx();
+  public int gridy();
+  public Insets insets();
+  public int ipadx();
+  public int ipady();
+
+  // setting the fields
+  public void setAnchor(int i);
+  public void setFill(int i);
+  public void setGridHeight(int i);
+  public void setGridWidth(int i);
+  public void setGridX(int i);
+  public void setGridY(int i);
+  public void setInsets(Insets i);
+  public void setIpadX(int i);
+  public void setIpadY(int i);
+  public void setWeightX(JoosFraction f);  
+  public void setWeightY(JoosFraction f);
+
+  // getting back the GridBagConstraints
+  public GridBagConstraints getConstraints();
+}
+
+extern public class JoosMediaTracker extends Object in "joos.lib" {
+  public JoosMediaTracker (MediaTracker myTracker);
+  public boolean waitForAll();
+  public boolean waitForID(int id);
+  public MediaTracker getMediaTracker();
+}
+
+// to get at public instance variables in Rectangle
+extern public class JoosRectangle extends Rectangle in "joos.lib" {
+  // Constructor
+  public JoosRectangle(int x, int y, int w, int h);
+  public int x();
+  public int y();
+  public int width();
+  public int height();
+  public void setX(int x);
+  public void setY(int y);
+  public void setWidth(int w);
+  public void setHeight(int h);
+}
+
+
+extern public class JoosURL extends Object in "joos.lib" {
+  public JoosURL(URL context, String spec);
+  public Object getContent();
+  public URL getURL();
+  public boolean openConnection();
+  public boolean openOutputStream();
+  public boolean println(String s);
+  public boolean print(String s);
+  public boolean closeOutputStream();
+  public boolean openInputStream();
+  public String readLine();
+  public boolean closeInputStream(); 
+  public String getErrorLog();
+} 
+
+extern public class WigApplet extends Applet in "joos.lib" {
+  public WigApplet();
+  public void addResult(String name, String value);
+  public boolean openURL();
+  public boolean returnResults();
+  public void getResponse();
+}

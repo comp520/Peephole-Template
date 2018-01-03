@@ -1,0 +1,164 @@
+|---|---|---|---|---|---|---|
+|   |   |   |   |   |   |   |
+|---|---|---|---|---|---|---|
+|   |   |   |   |   |   |   |
+|---|---|---|---|---|---|---|
+|   |   |   |   |   |   |   |
+|---|---|---|---|---|---|---|
+|   |   |   |   |   |   |   |
+|---|---|---|---|---|---|---|
+|   |   |   |   |   |   |   |
+|---|---|---|---|---|---|---|
+|   |   |   |   |   |   |   |
+|---|---|---|---|---|---|---|
+|   |   |   |   |   |   |   |
+|---|---|---|---|---|---|---|
+Player X's turn -> What would you like to do?
+1 - Classic: drops a token in a chosen column.
+2 - Bomb: eliminates the contents of all surrounding cells.
+3 - Kill Row & Column: eliminates the row and column where the player's token lands.
+4 - Kill Column: eliminates the column where the player's token lands.
+Please choose a column between 1 and 7
+|---|---|---|---|---|---|---|
+|   |   |   |   |   |   |   |
+|---|---|---|---|---|---|---|
+|   |   |   |   |   |   |   |
+|---|---|---|---|---|---|---|
+|   |   |   |   |   |   |   |
+|---|---|---|---|---|---|---|
+|   |   |   |   |   |   |   |
+|---|---|---|---|---|---|---|
+|   |   |   |   |   |   |   |
+|---|---|---|---|---|---|---|
+|   |   |   |   |   |   |   |
+|---|---|---|---|---|---|---|
+| X |   |   |   |   |   |   |
+|---|---|---|---|---|---|---|
+Player O's turn -> What would you like to do?
+1 - Classic: drops a token in a chosen column.
+2 - Diagonal Bomb: eliminates the contents of diagonal cells.
+3 - Bomb: eliminates the contents of all surrounding cells.
+4 - Kill Row & Column: eliminates the row and column where the player's token lands.
+Please choose a column between 1 and 7
+|---|---|---|---|---|---|---|
+|   |   |   |   |   |   |   |
+|---|---|---|---|---|---|---|
+|   |   |   |   |   |   |   |
+|---|---|---|---|---|---|---|
+|   |   |   |   |   |   |   |
+|---|---|---|---|---|---|---|
+|   |   |   |   |   |   |   |
+|---|---|---|---|---|---|---|
+|   |   |   |   |   |   |   |
+|---|---|---|---|---|---|---|
+|   |   |   |   |   |   |   |
+|---|---|---|---|---|---|---|
+| X | O |   |   |   |   |   |
+|---|---|---|---|---|---|---|
+Player X's turn -> What would you like to do?
+1 - Classic: drops a token in a chosen column.
+2 - Bomb: eliminates the contents of all surrounding cells.
+3 - Kill Row & Column: eliminates the row and column where the player's token lands.
+4 - Kill Column: eliminates the column where the player's token lands.
+Please choose a column between 1 and 7
+|---|---|---|---|---|---|---|
+|   |   |   |   |   |   |   |
+|---|---|---|---|---|---|---|
+|   |   |   |   |   |   |   |
+|---|---|---|---|---|---|---|
+|   |   |   |   |   |   |   |
+|---|---|---|---|---|---|---|
+|   |   |   |   |   |   |   |
+|---|---|---|---|---|---|---|
+|   |   |   |   |   |   |   |
+|---|---|---|---|---|---|---|
+| X |   |   |   |   |   |   |
+|---|---|---|---|---|---|---|
+| X | O |   |   |   |   |   |
+|---|---|---|---|---|---|---|
+Player O's turn -> What would you like to do?
+1 - Classic: drops a token in a chosen column.
+2 - Diagonal Bomb: eliminates the contents of diagonal cells.
+3 - Bomb: eliminates the contents of all surrounding cells.
+4 - Kill Row & Column: eliminates the row and column where the player's token lands.
+Please choose a column between 1 and 7
+|---|---|---|---|---|---|---|
+|   |   |   |   |   |   |   |
+|---|---|---|---|---|---|---|
+|   |   |   |   |   |   |   |
+|---|---|---|---|---|---|---|
+|   |   |   |   |   |   |   |
+|---|---|---|---|---|---|---|
+|   |   |   |   |   |   |   |
+|---|---|---|---|---|---|---|
+|   |   |   |   |   |   |   |
+|---|---|---|---|---|---|---|
+| X | O |   |   |   |   |   |
+|---|---|---|---|---|---|---|
+| X | O |   |   |   |   |   |
+|---|---|---|---|---|---|---|
+Player X's turn -> What would you like to do?
+1 - Classic: drops a token in a chosen column.
+2 - Bomb: eliminates the contents of all surrounding cells.
+3 - Kill Row & Column: eliminates the row and column where the player's token lands.
+4 - Kill Column: eliminates the column where the player's token lands.
+Please choose a column between 1 and 7
+|---|---|---|---|---|---|---|
+|   |   |   |   |   |   |   |
+|---|---|---|---|---|---|---|
+|   |   |   |   |   |   |   |
+|---|---|---|---|---|---|---|
+|   |   |   |   |   |   |   |
+|---|---|---|---|---|---|---|
+|   |   |   |   |   |   |   |
+|---|---|---|---|---|---|---|
+| X |   |   |   |   |   |   |
+|---|---|---|---|---|---|---|
+| X | O |   |   |   |   |   |
+|---|---|---|---|---|---|---|
+| X | O |   |   |   |   |   |
+|---|---|---|---|---|---|---|
+Player O's turn -> What would you like to do?
+1 - Classic: drops a token in a chosen column.
+2 - Diagonal Bomb: eliminates the contents of diagonal cells.
+3 - Bomb: eliminates the contents of all surrounding cells.
+4 - Kill Row & Column: eliminates the row and column where the player's token lands.
+Please choose a column between 1 and 7
+|---|---|---|---|---|---|---|
+|   |   |   |   |   |   |   |
+|---|---|---|---|---|---|---|
+|   |   |   |   |   |   |   |
+|---|---|---|---|---|---|---|
+|   |   |   |   |   |   |   |
+|---|---|---|---|---|---|---|
+|   |   |   |   |   |   |   |
+|---|---|---|---|---|---|---|
+| X | O |   |   |   |   |   |
+|---|---|---|---|---|---|---|
+| X | O |   |   |   |   |   |
+|---|---|---|---|---|---|---|
+| X | O |   |   |   |   |   |
+|---|---|---|---|---|---|---|
+Player X's turn -> What would you like to do?
+1 - Classic: drops a token in a chosen column.
+2 - Bomb: eliminates the contents of all surrounding cells.
+3 - Kill Row & Column: eliminates the row and column where the player's token lands.
+4 - Kill Column: eliminates the column where the player's token lands.
+Please choose a column between 1 and 7
+GAME OVER!!!
+|---|---|---|---|---|---|---|
+|   |   |   |   |   |   |   |
+|---|---|---|---|---|---|---|
+|   |   |   |   |   |   |   |
+|---|---|---|---|---|---|---|
+|   |   |   |   |   |   |   |
+|---|---|---|---|---|---|---|
+| X |   |   |   |   |   |   |
+|---|---|---|---|---|---|---|
+| X | O |   |   |   |   |   |
+|---|---|---|---|---|---|---|
+| X | O |   |   |   |   |   |
+|---|---|---|---|---|---|---|
+| X | O |   |   |   |   |   |
+|---|---|---|---|---|---|---|
+Winner: X

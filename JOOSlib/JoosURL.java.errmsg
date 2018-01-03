@@ -1,0 +1,170 @@
+package joos.lib;
+
+import java.io.*;
+import java.net.*;
+
+public class JoosURL extends Object {
+ 
+  protected URL myURL;                  
+  protected URLConnection myConnection;
+  protected PrintStream myOutputStream;
+  protected DataInputStream myInputStream;
+
+  public JoosURL(URL context, String spec)
+    { super();
+      try 
+        { myURL = new URL(context,spec); } 
+      catch (MalformedURLException e)
+        { System.out.println("Malformed URL in JoosURL");
+          myURL = null;
+        }
+      myConnection = null;
+      myOutputStream = null;
+      myInputStream = null;
+    }
+
+  public Object getContent()
+   { Object rvalue;
+     try 
+       { rvalue = myURL.getContent(); 
+         return(rvalue);
+       }
+     catch (java.io.IOException e)
+       { System.out.println("IO exception in JoosURL.getContent"); 
+         return(null);
+       }
+   }
+       
+  public URL getURL ()
+    { return(myURL);
+    }
+
+  public boolean openConnection()
+    { if (myURL != null) 
+        { try
+            { myConnection = myURL.openConnection(); 
+              return(true);
+            }
+          catch (java.io.IOException e)
+            { System.out.println(
+                 "Unable to open connection in JoosURL.openConnection"); 
+              return(false);
+            }
+         }
+      else
+         { System.out.println("Given null URL in JoosURL.openConnection");
+           return(false);
+         }
+     }      
+
+   public boolean openOutputStream()
+     {  if (myConnection != null)
+           try
+             { myOutputStream = new PrintStream(myConnection.getOutputStream());
+               return(true);
+             }
+           catch (java.io.IOException e)
+             { System.out.println(
+                 "Unable to open output stream in JoosURL.openOutputStream");
+               return(false);
+             }
+         else
+           { System.out.println(
+                 "Connection not open in JoosURL.openOutputStream");
+             return(false);
+           }
+      }
+
+   public boolean println(String s)
+      { if (myOutputStream != null)
+          { myOutputStream.println(s);
+            return(true);
+          }
+        else
+          { System.out.println(
+             "Trying to print to unopened output stream in JoosURL.println");
+            return(false);
+          }
+       }
+
+
+   public boolean print(String s)
+      { if (myOutputStream != null)
+          { myOutputStream.print(s);
+            return(true);
+          }
+        else
+          { System.out.println(
+             "Trying to print to unopened output stream in JoosURL.print");
+            return(false);
+          }
+       }
+
+   public boolean closeOutputStream()
+     { if (myOutputStream != null)
+         { myOutputStream.close();
+           myOutputStream = null;
+           return(true);
+         }
+       else
+         { System.out.println(
+            "Trying to close unopened output stream in JoosURL.closeOutputStream");
+           return(false);
+         }
+      }
+
+
+   public boolean openInputStream()
+     {  if (myConnection != null)
+           try
+             { myInputStream = 
+                  new DataInputStream(myConnection.getInputStream());
+               return(true);
+             }
+           catch (java.io.IOException e)
+             { System.out.println(
+                 "Unable to open input stream in JoosURL.openInputStream");
+               return(false);
+             }
+         else
+           { System.out.println(
+                 "Connection not open in JoosURL.openInputStream");
+             return(false);
+           }
+      }
+
+   public String readln()
+      { if (myInputStream != null)
+          try
+            { return(myInputStream.readLine());
+            }
+          catch (java.io.IOException e)
+            { System.out.println("IO error in JoosURL.readln");
+              return(null);
+            } 
+        else
+          { System.out.println(
+             "Trying to read from unopened input stream in JoosURL.readln");
+            return(null);
+          }
+       }
+
+   public boolean closeInputStream()
+     { if (myInputStream != null)
+         try
+           { myInputStream.close();
+             myInputStream = null;
+             return(true);
+           }
+         catch (java.io.IOException e)
+           { System.out.println(
+               "Error closing Input Stream in JoosURL.closeInputStream");
+             return(false);
+           }
+       else
+         { System.out.println(
+            "Trying to close unopened input stream in JoosURL.closeInputStream");
+           return(false);
+         }
+     }
+}

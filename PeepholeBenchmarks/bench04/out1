@@ -1,0 +1,380 @@
+
+Thank you for playing BATTLE CONNECT FOUR!
+
+Before starting, please choose a game mode:
+1 - with fixed specialty moves
+2 - with random specialty moves
+|---|---|---|---|---|---|---|
+|   |   |   |   |   |   |   |
+|---|---|---|---|---|---|---|
+|   |   |   |   |   |   |   |
+|---|---|---|---|---|---|---|
+|   |   |   |   |   |   |   |
+|---|---|---|---|---|---|---|
+|   |   |   |   |   |   |   |
+|---|---|---|---|---|---|---|
+|   |   |   |   |   |   |   |
+|---|---|---|---|---|---|---|
+|   |   |   |   |   |   |   |
+|---|---|---|---|---|---|---|
+|   |   |   |   |   |   |   |
+|---|---|---|---|---|---|---|
+Player X's turn -> What would you like to do?
+1 - Classic: drops a token in a chosen column.
+2 - Bomb: eliminates the contents of all surrounding cells.
+3 - Kill Row: clears the row where the token lands.
+4 - Flip Board: flips the board upside down.
+Please choose a column between 1 and 7
+|---|---|---|---|---|---|---|
+|   |   |   |   |   |   |   |
+|---|---|---|---|---|---|---|
+|   |   |   |   |   |   |   |
+|---|---|---|---|---|---|---|
+|   |   |   |   |   |   |   |
+|---|---|---|---|---|---|---|
+|   |   |   |   |   |   |   |
+|---|---|---|---|---|---|---|
+|   |   |   |   |   |   |   |
+|---|---|---|---|---|---|---|
+|   |   |   |   |   |   |   |
+|---|---|---|---|---|---|---|
+|   |   |   | X |   |   |   |
+|---|---|---|---|---|---|---|
+Player O's turn -> What would you like to do?
+1 - Classic: drops a token in a chosen column.
+2 - Bomb: eliminates the contents of all surrounding cells.
+3 - Kill Row: clears the row where the token lands.
+4 - Flip Board: flips the board upside down.
+Please choose a column between 1 and 7
+|---|---|---|---|---|---|---|
+|   |   |   |   |   |   |   |
+|---|---|---|---|---|---|---|
+|   |   |   |   |   |   |   |
+|---|---|---|---|---|---|---|
+|   |   |   |   |   |   |   |
+|---|---|---|---|---|---|---|
+|   |   |   |   |   |   |   |
+|---|---|---|---|---|---|---|
+|   |   |   |   |   |   |   |
+|---|---|---|---|---|---|---|
+|   |   |   |   |   |   |   |
+|---|---|---|---|---|---|---|
+|   |   |   | X | O |   |   |
+|---|---|---|---|---|---|---|
+Player X's turn -> What would you like to do?
+1 - Classic: drops a token in a chosen column.
+2 - Bomb: eliminates the contents of all surrounding cells.
+3 - Kill Row: clears the row where the token lands.
+4 - Flip Board: flips the board upside down.
+Please choose a column between 1 and 7
+|---|---|---|---|---|---|---|
+|   |   |   |   |   |   |   |
+|---|---|---|---|---|---|---|
+|   |   |   |   |   |   |   |
+|---|---|---|---|---|---|---|
+|   |   |   |   |   |   |   |
+|---|---|---|---|---|---|---|
+|   |   |   |   |   |   |   |
+|---|---|---|---|---|---|---|
+|   |   |   |   |   |   |   |
+|---|---|---|---|---|---|---|
+|   |   |   |   |   |   |   |
+|---|---|---|---|---|---|---|
+| X |   |   | X | O |   |   |
+|---|---|---|---|---|---|---|
+Player O's turn -> What would you like to do?
+1 - Classic: drops a token in a chosen column.
+2 - Bomb: eliminates the contents of all surrounding cells.
+3 - Kill Row: clears the row where the token lands.
+4 - Flip Board: flips the board upside down.
+Please choose a column between 1 and 7
+|---|---|---|---|---|---|---|
+|   |   |   |   |   |   |   |
+|---|---|---|---|---|---|---|
+|   |   |   |   |   |   |   |
+|---|---|---|---|---|---|---|
+|   |   |   |   |   |   |   |
+|---|---|---|---|---|---|---|
+|   |   |   |   |   |   |   |
+|---|---|---|---|---|---|---|
+|   |   |   |   |   |   |   |
+|---|---|---|---|---|---|---|
+| O |   |   |   |   |   |   |
+|---|---|---|---|---|---|---|
+| X |   |   | X | O |   |   |
+|---|---|---|---|---|---|---|
+Player X's turn -> What would you like to do?
+1 - Classic: drops a token in a chosen column.
+2 - Bomb: eliminates the contents of all surrounding cells.
+3 - Kill Row: clears the row where the token lands.
+4 - Flip Board: flips the board upside down.
+Please choose a column between 1 and 7
+|---|---|---|---|---|---|---|
+|   |   |   |   |   |   |   |
+|---|---|---|---|---|---|---|
+|   |   |   |   |   |   |   |
+|---|---|---|---|---|---|---|
+|   |   |   |   |   |   |   |
+|---|---|---|---|---|---|---|
+|   |   |   |   |   |   |   |
+|---|---|---|---|---|---|---|
+|   |   |   |   |   |   |   |
+|---|---|---|---|---|---|---|
+| O |   |   |   |   |   |   |
+|---|---|---|---|---|---|---|
+| X | X |   | X | O |   |   |
+|---|---|---|---|---|---|---|
+Player O's turn -> What would you like to do?
+1 - Classic: drops a token in a chosen column.
+2 - Bomb: eliminates the contents of all surrounding cells.
+3 - Kill Row: clears the row where the token lands.
+4 - Flip Board: flips the board upside down.
+Please choose a column between 1 and 7
+|---|---|---|---|---|---|---|
+|   |   |   |   |   |   |   |
+|---|---|---|---|---|---|---|
+|   |   |   |   |   |   |   |
+|---|---|---|---|---|---|---|
+|   |   |   |   |   |   |   |
+|---|---|---|---|---|---|---|
+|   |   |   |   |   |   |   |
+|---|---|---|---|---|---|---|
+|   |   |   |   |   |   |   |
+|---|---|---|---|---|---|---|
+| O |   |   |   |   |   |   |
+|---|---|---|---|---|---|---|
+| X | X | O | X | O |   |   |
+|---|---|---|---|---|---|---|
+Player X's turn -> What would you like to do?
+1 - Classic: drops a token in a chosen column.
+2 - Bomb: eliminates the contents of all surrounding cells.
+3 - Kill Row: clears the row where the token lands.
+4 - Flip Board: flips the board upside down.
+Please choose a column between 1 and 7
+|---|---|---|---|---|---|---|
+|   |   |   |   |   |   |   |
+|---|---|---|---|---|---|---|
+|   |   |   |   |   |   |   |
+|---|---|---|---|---|---|---|
+|   |   |   |   |   |   |   |
+|---|---|---|---|---|---|---|
+|   |   |   |   |   |   |   |
+|---|---|---|---|---|---|---|
+|   |   |   |   |   |   |   |
+|---|---|---|---|---|---|---|
+| O |   | X |   |   |   |   |
+|---|---|---|---|---|---|---|
+| X | X | O | X | O |   |   |
+|---|---|---|---|---|---|---|
+Player O's turn -> What would you like to do?
+1 - Classic: drops a token in a chosen column.
+2 - Bomb: eliminates the contents of all surrounding cells.
+3 - Kill Row: clears the row where the token lands.
+4 - Flip Board: flips the board upside down.
+Please choose a column between 1 and 7
+|---|---|---|---|---|---|---|
+|   |   |   |   |   |   |   |
+|---|---|---|---|---|---|---|
+|   |   |   |   |   |   |   |
+|---|---|---|---|---|---|---|
+|   |   |   |   |   |   |   |
+|---|---|---|---|---|---|---|
+|   |   |   |   |   |   |   |
+|---|---|---|---|---|---|---|
+|   |   |   |   |   |   |   |
+|---|---|---|---|---|---|---|
+| O |   | X |   | O |   |   |
+|---|---|---|---|---|---|---|
+| X | X | O | X | O |   |   |
+|---|---|---|---|---|---|---|
+Player X's turn -> What would you like to do?
+1 - Classic: drops a token in a chosen column.
+2 - Bomb: eliminates the contents of all surrounding cells.
+3 - Kill Row: clears the row where the token lands.
+4 - Flip Board: flips the board upside down.
+Please choose a column between 1 and 7
+|---|---|---|---|---|---|---|
+|   |   |   |   |   |   |   |
+|---|---|---|---|---|---|---|
+|   |   |   |   |   |   |   |
+|---|---|---|---|---|---|---|
+|   |   |   |   |   |   |   |
+|---|---|---|---|---|---|---|
+|   |   |   |   |   |   |   |
+|---|---|---|---|---|---|---|
+|   |   |   |   | X |   |   |
+|---|---|---|---|---|---|---|
+| O |   | X |   | O |   |   |
+|---|---|---|---|---|---|---|
+| X | X | O | X | O |   |   |
+|---|---|---|---|---|---|---|
+Player O's turn -> What would you like to do?
+1 - Classic: drops a token in a chosen column.
+2 - Bomb: eliminates the contents of all surrounding cells.
+3 - Kill Row: clears the row where the token lands.
+4 - Flip Board: flips the board upside down.
+Please choose a column between 1 and 7
+|---|---|---|---|---|---|---|
+|   |   |   |   |   |   |   |
+|---|---|---|---|---|---|---|
+|   |   |   |   |   |   |   |
+|---|---|---|---|---|---|---|
+|   |   |   |   |   |   |   |
+|---|---|---|---|---|---|---|
+|   |   |   |   |   |   |   |
+|---|---|---|---|---|---|---|
+|   |   | O |   | X |   |   |
+|---|---|---|---|---|---|---|
+| O |   | X |   | O |   |   |
+|---|---|---|---|---|---|---|
+| X | X | O | X | O |   |   |
+|---|---|---|---|---|---|---|
+Player X's turn -> What would you like to do?
+1 - Classic: drops a token in a chosen column.
+2 - Bomb: eliminates the contents of all surrounding cells.
+3 - Kill Row: clears the row where the token lands.
+4 - Flip Board: flips the board upside down.
+Please choose a column between 1 and 7
+|---|---|---|---|---|---|---|
+|   |   |   |   |   |   |   |
+|---|---|---|---|---|---|---|
+|   |   |   |   |   |   |   |
+|---|---|---|---|---|---|---|
+|   |   |   |   |   |   |   |
+|---|---|---|---|---|---|---|
+|   |   |   |   |   |   |   |
+|---|---|---|---|---|---|---|
+|   |   | O |   | X |   |   |
+|---|---|---|---|---|---|---|
+| O |   | X | X | O |   |   |
+|---|---|---|---|---|---|---|
+| X | X | O | X | O |   |   |
+|---|---|---|---|---|---|---|
+Player O's turn -> What would you like to do?
+1 - Classic: drops a token in a chosen column.
+2 - Bomb: eliminates the contents of all surrounding cells.
+3 - Kill Row: clears the row where the token lands.
+4 - Flip Board: flips the board upside down.
+Please choose a column between 1 and 7
+|---|---|---|---|---|---|---|
+|   |   |   |   |   |   |   |
+|---|---|---|---|---|---|---|
+|   |   |   |   |   |   |   |
+|---|---|---|---|---|---|---|
+|   |   |   |   |   |   |   |
+|---|---|---|---|---|---|---|
+|   |   |   |   |   |   |   |
+|---|---|---|---|---|---|---|
+|   |   | O | O | X |   |   |
+|---|---|---|---|---|---|---|
+| O |   | X | X | O |   |   |
+|---|---|---|---|---|---|---|
+| X | X | O | X | O |   |   |
+|---|---|---|---|---|---|---|
+Player X's turn -> What would you like to do?
+1 - Classic: drops a token in a chosen column.
+2 - Bomb: eliminates the contents of all surrounding cells.
+3 - Kill Row: clears the row where the token lands.
+4 - Flip Board: flips the board upside down.
+Please choose a column between 1 and 7
+|---|---|---|---|---|---|---|
+|   |   |   |   |   |   |   |
+|---|---|---|---|---|---|---|
+|   |   |   |   |   |   |   |
+|---|---|---|---|---|---|---|
+|   |   |   |   |   |   |   |
+|---|---|---|---|---|---|---|
+|   |   |   | X |   |   |   |
+|---|---|---|---|---|---|---|
+|   |   | O | O | X |   |   |
+|---|---|---|---|---|---|---|
+| O |   | X | X | O |   |   |
+|---|---|---|---|---|---|---|
+| X | X | O | X | O |   |   |
+|---|---|---|---|---|---|---|
+Player O's turn -> What would you like to do?
+1 - Classic: drops a token in a chosen column.
+2 - Bomb: eliminates the contents of all surrounding cells.
+3 - Kill Row: clears the row where the token lands.
+4 - Flip Board: flips the board upside down.
+Please choose a column between 1 and 7
+|---|---|---|---|---|---|---|
+|   |   |   |   |   |   |   |
+|---|---|---|---|---|---|---|
+|   |   |   |   |   |   |   |
+|---|---|---|---|---|---|---|
+|   |   |   |   |   |   |   |
+|---|---|---|---|---|---|---|
+|   |   | O | X |   |   |   |
+|---|---|---|---|---|---|---|
+|   |   | O | O | X |   |   |
+|---|---|---|---|---|---|---|
+| O |   | X | X | O |   |   |
+|---|---|---|---|---|---|---|
+| X | X | O | X | O |   |   |
+|---|---|---|---|---|---|---|
+Player X's turn -> What would you like to do?
+1 - Classic: drops a token in a chosen column.
+2 - Bomb: eliminates the contents of all surrounding cells.
+3 - Kill Row: clears the row where the token lands.
+4 - Flip Board: flips the board upside down.
+Please choose a column between 1 and 7
+|---|---|---|---|---|---|---|
+|   |   |   |   |   |   |   |
+|---|---|---|---|---|---|---|
+|   |   |   |   |   |   |   |
+|---|---|---|---|---|---|---|
+|   |   |   | X |   |   |   |
+|---|---|---|---|---|---|---|
+|   |   | O | X |   |   |   |
+|---|---|---|---|---|---|---|
+|   |   | O | O | X |   |   |
+|---|---|---|---|---|---|---|
+| O |   | X | X | O |   |   |
+|---|---|---|---|---|---|---|
+| X | X | O | X | O |   |   |
+|---|---|---|---|---|---|---|
+Player O's turn -> What would you like to do?
+1 - Classic: drops a token in a chosen column.
+2 - Bomb: eliminates the contents of all surrounding cells.
+3 - Kill Row: clears the row where the token lands.
+4 - Flip Board: flips the board upside down.
+Please choose a column between 1 and 7
+|---|---|---|---|---|---|---|
+|   |   |   |   |   |   |   |
+|---|---|---|---|---|---|---|
+|   |   |   |   |   |   |   |
+|---|---|---|---|---|---|---|
+|   |   |   | X |   |   |   |
+|---|---|---|---|---|---|---|
+|   |   | O | X |   |   |   |
+|---|---|---|---|---|---|---|
+|   |   | O | O | X |   |   |
+|---|---|---|---|---|---|---|
+| O | O | X | X | O |   |   |
+|---|---|---|---|---|---|---|
+| X | X | O | X | O |   |   |
+|---|---|---|---|---|---|---|
+Player X's turn -> What would you like to do?
+1 - Classic: drops a token in a chosen column.
+2 - Bomb: eliminates the contents of all surrounding cells.
+3 - Kill Row: clears the row where the token lands.
+4 - Flip Board: flips the board upside down.
+Please choose a column between 1 and 7
+GAME OVER!!!
+|---|---|---|---|---|---|---|
+|   |   |   |   |   |   |   |
+|---|---|---|---|---|---|---|
+|   |   |   |   |   |   |   |
+|---|---|---|---|---|---|---|
+|   |   |   |   |   |   |   |
+|---|---|---|---|---|---|---|
+|   |   |   | X |   |   |   |
+|---|---|---|---|---|---|---|
+|   |   | O | X |   |   |   |
+|---|---|---|---|---|---|---|
+| O | O | X | X | O |   |   |
+|---|---|---|---|---|---|---|
+| X | X | O | X | O |   |   |
+|---|---|---|---|---|---|---|
+Winner: X

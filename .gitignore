@@ -1,0 +1,5 @@
+*.dump
+*.optdump
+*.class
+*.j
+*.o

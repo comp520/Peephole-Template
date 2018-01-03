@@ -1,0 +1,22 @@
+extern public class BigDecimal in "java.math" {
+  public BigDecimal(String s);
+  public BigDecimal negate();
+  public BigDecimal abs(); 
+  public BigDecimal add(BigDecimal n);
+  public int compareTo(BigDecimal val);
+  public BigDecimal divide(BigDecimal val, int scale, int roundingMode);
+  public boolean equals(Object x); 
+  public int intValue(); 
+  public BigDecimal max(BigDecimal val);
+  public BigDecimal min(BigDecimal val);
+  public BigDecimal multiply(BigDecimal n);
+  public int signum();
+  public BigDecimal subtract(BigDecimal n);
+  public BigDecimal setScale(int scale, int mode);
+  public String toString();
+  public int hashCode( );
+  public BigDecimal movePointLeft(int n);
+  public BigDecimal movePointRight(int n);
+  public int scale( );
+  public BigDecimal unscaledValue( );
+} 

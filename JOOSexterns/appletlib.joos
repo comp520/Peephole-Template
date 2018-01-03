@@ -1,0 +1,53 @@
+// java.applet.Applet - page 234 Nutshell 1.ed - 275 Nutshell 2.ed
+extern public class Applet extends Panel in "java.applet" {
+  public Applet();
+  public void destroy(); // empty
+  public AppletContext getAppletContext();
+  public String getAppletInfo();
+  public AudioClip getAudioClip(URL url,String name);
+  public URL getCodeBase();
+  public URL getDocumentBase();
+  public Image getImage(URL url, String name);
+  public String getParameter(String name);
+  public void init(); // empty
+  public boolean isActive();
+  public void play(URL url, String name);
+  public void resize(int width, int height); // overrides Component.resize()
+  public final void setStub(AppletStub stub);
+  public void showStatus(String msg);
+  public void start(); // empty
+  public void stop();  // empty
+}
+
+// java.applet.AppletContext - page 235 Nutshell 1.ed - 277 Nutshell 2.ed
+//   should be an interface
+extern public abstract class AppletContext in "java.applet" {
+  public AppletContext();
+  public abstract Applet getApplet(String name);
+  // public abstract Enumeration getApplets();
+  public abstract AudioClip getAudioClip(URL url);
+  public abstract Image getImage(URL url);
+  public abstract void showDocument(URL url);
+  public abstract void showStatus(String status);
+}
+
+// java.applet.AppletStub - page 235 Nutshell 1.ed - 277 Nutshell 2.ed
+// should be an interface
+extern public abstract class AppletStub in "java.applet" {
+  public AppletStub();
+  public abstract void appletResize(int width, int height);
+  public abstract AppletContext getAppletContext();
+  public abstract URL getCodeBase();
+  public abstract URL getDocumentBase();
+  public abstract String getParameter(String name);
+  public abstract boolean isActive();
+}
+
+// java.applet.AudioClip  - page 236 Nutshell 1.ed - 277 Nutshell 2.ed 
+// should be an interface 
+extern public abstract class AudioClip in "java.applet" {
+  public AudioClip();
+  public abstract void loop();
+  public abstract void play();
+  public abstract void stop();
+}

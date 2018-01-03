@@ -1,0 +1,9 @@
+extern public class JoosBitwise in "lib"
+{
+    public JoosBitwise();
+    public int shl(int num, int amt);
+    public int shr(int num, int amt);
+    public int and(int a, int b);
+    public int or(int a, int b);
+}
+

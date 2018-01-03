@@ -1,0 +1,228 @@
+// -----------------------------------------------------------------
+// The following classes are defined in the standard java class
+//   libraries,  and are described in the book:
+//   "The Java(tm) Language Specification", by Gosling, Joy and Steele,
+//   published by Addison-Wesley.   On-line copies of the book are
+//   available via <http://java.sun.com/doc/language_specification.html>.
+// -----------------------------------------------------------------
+// Oct 1st 2004 - added join() to Thread
+
+// java.lang.Object - Section 20.1, page 458 
+// see also joos.lib.JoosObject to get the wait method
+extern public class Object in "java.lang" { 
+  public Object();
+  public String toString();
+  public final void notify(); // throws IllegalMonitorStateException
+  public final void notifyAll(); // throws IllegalMonitorStateException
+  public boolean equals(Object obj);
+}
+
+// java.lang.Boolean - Section 20.4, page 469 - page 445 Nutshell 2.ed
+extern public final class Boolean in "java.lang" {
+  public Boolean(boolean value);
+  public Boolean(String s);
+  public String toString();
+  public boolean equals(Object obj);
+  public boolean booleanValue();
+}
+
+// java.lang.Character - page 445 Nutshell 2.ed
+extern public final class Character in "java.lang" {
+  public Character(char value);
+  public boolean isDefined(char ch);
+  public boolean isDigit(char ch);
+  public boolean isISOControl(char ch);
+  public boolean isLetter(char ch);
+  public boolean isLetterOrDigit(char ch);
+  public boolean isLowerCase(char ch);
+  public boolean isSpaceChar(char ch);
+  public boolean isTitleCase(char ch);
+  public boolean isUpperCase(char ch);
+  public boolean isWhitespace(char ch);
+  public char toLowerCase(char ch);
+  public char toTitleCase(char ch);
+  public char toUpperCase(char ch);
+  public char charValue();
+  public boolean equals(Object obj);
+  public String toString();
+}
+
+// java.lang.Integer - Section 20.6, page 487 - page 459 Nutshell 2.ed
+extern public final class Integer in "java.lang" {
+  public Integer(int value);
+  public Integer(String s);
+  public String toString();
+  public boolean equals(Object obj);
+  public int intValue();
+}
+
+// java.lang.Runnable - page 467 Nutshell 2.ed
+//   should be an interface, don't extend it in Joos programs, rather
+//     extend JoosRunnable which is a real class - see joos.lib.JoosRunnable
+extern public abstract class Runnable extends Object in "java.lang" {
+ public Runnable();
+ public abstract void run();
+}
+
+// java.lang.String - Section 20.12, page 531 - page 472 Nutshell 2.ed
+extern public final class String in "java.lang" {
+  public String();
+  public String(String value);
+  public String(StringBuffer buffer);
+  public String valueOf(boolean b);
+  public char charAt(int index);
+  public int compareTo(String anotherString);
+  public boolean endsWith(String suffix);
+  public boolean equals(Object obj);
+  public boolean equalsIgnoreCase(String anotherString);
+  public int indexOf(String str, int fromIndex);
+  public int lastIndexOf(String str, int fromIndex);
+  public int length();
+  public boolean regionMatches(boolean ignoreCase, int toffset,
+                       String other, int ooffset, int len);
+  public boolean startsWith(String prefix, int toffset);
+  public String substring(int beginIndex, int endIndex);
+  public String concat(String str);
+  public String toLowerCase();
+  public String toUpperCase();
+  public String toString();
+  public String trim();
+}
+
+// java.lang.StringBuffer - Section 20.13 - page 473 Nutshell 2.ed
+extern public class StringBuffer in "java.lang" {
+  public StringBuffer();
+  public StringBuffer(int length);
+  public StringBuffer(String str);
+  public String toString();
+  public int length();
+  public void setLength(int newLength);
+  public int capacity();
+  public void ensureCapacity(int minimumCapacity);
+  public StringBuffer append(Object obj);
+  public StringBuffer insert(int offset, Object obj);
+  public StringBuffer reverse();
+}
+
+// java.lang.Thread - page 325 in Java in a Nutshell 1.ed - page 476 Nutshell 2.ed
+// should be extends Object implements Runnable
+// see also joos.lib.JoosThread
+extern public class Thread extends Runnable in "java.lang" {
+  public Thread();
+  public Thread(Runnable target);
+  public Thread(String name);
+  public Thread(Runnable target,String name);
+  public void checkAccess(); // throws SecurityException (runtime)
+  public int countStackFrames(); // throws IllegalThreadStateException (runtime)
+  public final String getName();
+  public final int getPriority();
+  public final boolean isAlive();
+  public final boolean isDaemon();
+  public final void resume();
+  public void run();
+  public final void setDaemon(boolean on); // throws IllegalThreadStateException
+  public final void setName(String name);
+  public final void setPriority(int Priority); // throws IllegalArgumentExc
+  public synchronized void start(); // throws IllegalThreadStateException 
+  public final void stop();
+  public final void suspend();
+	public final void join();
+  public String toString(); // overrides Object.toString()
+}
+
+// java.util.BitSet - Section 21.2 - page 618 - page 445 Nutshell 2.ed
+extern public class BitSet in "java.util" {
+  public BitSet();
+  public BitSet(int nbits);
+  public String toString();
+  public boolean equals(Object obj);
+  public boolean get(int bitIndex);
+  public void set(int bitIndex);
+  public void clear(int bitIndex);
+  public void and(BitSet set);
+  public void or(BitSet set);
+  public void xor(BitSet set);
+  public int size();
+}
+
+// java.util.Date - Section 21.3, page 622 - page 531 Nutshell 2.ed
+extern public class Date in "java.util" {
+  public Date();
+  public Date(int year, int month, int date, 
+                int hours, int minutes, int seconds);
+  public String toString();
+  public boolean equals(Object obj);
+  public int getYear();
+  public void setYear(int year);
+  public int getMonth();
+  public void setMonth(int month);
+  public int getDate();
+  public void setDate(int date);
+  public int getDay();
+  public int getHours();
+  public void setHours(int hours);
+  public int getMinutes();
+  public int setMinutes(int minutes);
+  public int getSeconds();
+  public int setSeconds(int seconds);
+  public boolean before(Date when);
+  public boolean after(Date when);
+  public String toLocaleString();
+  public String toGMTString();
+  public int getTimezoneOffset();
+}
+
+// java.util.Random - Section 21.9, page 646 - page 541 Nutshell 2.ed
+extern public class Random in "java.util" {
+  public Random();
+// public int nextInt(); // not sure if externs can be overloaded
+  public int nextInt(int n);
+}
+
+// java.util.Stack - page 543 Nutshell 2.ed
+extern public class Stack in "java.util" {
+  public Stack();
+  public boolean empty();
+  public synchronized Object peek();
+  public synchronized Object pop();
+  public Object push(Object item);
+  public synchronized int search(Object o);
+}
+
+// java.util.StringTokenizer - Section 21.10, page 651 - 544 Nutshell 2.ed
+extern public class StringTokenizer in "java.util" {
+  public StringTokenizer(String str, String delim, boolean returnTokens);
+  public StringTokenizer(String str, String delim);
+  public StringTokenizer(String str);
+  public boolean hasMoreTokens();
+  public String nextToken(String delim);
+  public boolean hasMoreElements();
+  public Object nextElement();
+  public int countTokens();
+}
+
+// java.util.Vector - Section 21.11, page 654 - page 545 Nutshell 2.ed
+extern public class Vector in "java.util" { // implements Cloneable
+  public Vector(int initialCapacity, int capacityIncrement);
+  public Vector(int initialCapacity);
+  public Vector();
+  public final String toString(); // overrides Object.toString()
+  public final Object elementAt(int index);
+  public final void setElementAt(Object obj, int index);
+  public final Object firstElement();
+  public final Object lastElement();
+  public final void addElement(Object obj);
+  public final void insertElementAt(Object obj, int index);
+  public final boolean removeElement(Object obj);
+  public final void removeElementAt(int index);
+  public final void removeAllElements();
+  public final boolean isEmpty();
+  public final int size();
+  public final void setSize(int newSize);
+  public final int capacity();
+  public final void ensureCapacity(int minCapacity);
+  public final void trimToSize();
+  public final boolean contains(Object elem);
+  public final int indexOf(Object elem);
+  public final int lastIndexOf(Object elem);
+}

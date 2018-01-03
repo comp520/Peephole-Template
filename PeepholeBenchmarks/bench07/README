@@ -1,0 +1,19 @@
+Welcome to GrueHunt!
+
+This is a simplified text adventure game.
+To navigate from room to room, use commands such as "north", "go south", "go up", etc.
+You can usually interact with a room with an appropriate verb, but "interact" will always do the default action if you cannot find the right word.
+All commands should be lower-case, and the text interpreter is very basic, so be careful with spelling.
+You can also collect coins and treasure, and have a limited amount of health. You can "show hp", "show treasure", and "show coins" to see how many/much you have left.
+Included in this package is a sample in1 file containing some typical commands. This generated game will probably end in death.
+If you would like to give up, just type "give up".
+
+To compile this game in java, just run the "make" command!
+To compile using joosc instead, just run "make joos".
+You can use "make gen" to generate a random in1 file.
+To use the sample input file and output to a file, use
+    java GrueHunt < in1 > out1
+To run a sample generation, playthrough, and see the outcome of the game, you can run:
+    make gen && java GrueHunt < in1 > out1 && tail out1
+
+Good luck, and don't let the grues bite.

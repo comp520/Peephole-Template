@@ -1,0 +1,16 @@
+// see also joos.lib.JoosURL
+extern public final class URL extends Object in "java.net" {
+  public URL(String protocol, String host, int port, String file); // throws MalformedURLException
+  public URL(String protocol, String host, String file); // throws MalformedURLException
+  public URL(String spec); // throws MalformedURLException
+  public URL(URL context,String spec); // throws MalformedURLException
+  public boolean equals(Object obj); // overrides Object.equals();
+  public String getFile();
+  public String getHost();
+  public int getPort();
+  public String getProtocol();
+  public String getRef();
+  public boolean sameFile(URL other);
+  public String toExternalForm();
+  public String toString(); // overrides Object.toString();
+} 

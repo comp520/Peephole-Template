@@ -1,0 +1,1 @@
+You asked us not to put a factorial function in. Challenge Accepted. This is the pseudocode for a factorial function. Take n greater than 0, if it is one, then return one. Otherwise, take the factorial of n multiplied by n-1.
