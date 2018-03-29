@@ -1,8 +1,8 @@
-all: clean
+all:
 	$(PEEPDIR)/joosc.sh *.java *.joos
 	make -C lib
 
-opt: clean
+opt:
 	$(PEEPDIR)/joosc.sh -O *.java *.joos
 	make -C lib
 
@@ -11,7 +11,7 @@ java:
 	make -C lib
 
 clean:	
-	rm -rf *.class *.j *~ newout
+	rm -rf *.class *.j *~ newout *.dump *.optdump
 	make -C lib clean
 
 run:

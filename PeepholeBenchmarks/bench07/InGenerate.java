@@ -5,7 +5,7 @@ public class InGenerate{
 
     public InGenerate(){
         super();
-        rand = new JoosRandom();
+        rand = new JoosRandom(1337);
     }
 
     public static void main (String[] args){

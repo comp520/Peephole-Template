@@ -17,7 +17,7 @@ public class FeastRoomAction extends RoomAction{
             JoosRandom rand;
             int n;
 
-            rand = new JoosRandom();
+            rand = new JoosRandom(1337);
             n = rand.nextInt() % 100;
             if (n < 0)
                 n = -n;

@@ -9,7 +9,7 @@ public abstract class RoomAction{
     public RoomAction(){
         super();
         O = new JoosIO();
-        R = new JoosRandom();
+        R = new JoosRandom(1337);
     }
 
     public void describe(){

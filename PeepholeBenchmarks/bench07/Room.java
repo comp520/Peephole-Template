@@ -114,7 +114,7 @@ public class Room {
     public int randomRange(int range){
         int num;
         JoosRandom rand;
-        rand = new JoosRandom();
+        rand = new JoosRandom(1337);
         num = rand.nextInt()%range;
         if (num >= 0)
         {

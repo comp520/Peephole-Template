@@ -26,7 +26,9 @@ do
 	echo "----------------"
 	echo -e -n "\033[0m"
 
-	PEEPDIR=`pwd` make -C $BENCH_DIR
+	PEEPDIR=`pwd` make -s --no-print-directory -C $BENCH_DIR clean
+
+	PEEPDIR=`pwd` make -s --no-print-directory -C $BENCH_DIR
 
 	if [ $? != 0 ]
 	then
@@ -40,12 +42,31 @@ do
 	echo "----------------"
 	echo -e -n "\033[0m"
 
-	PEEPDIR=`pwd` make -C $BENCH_DIR opt
+	PEEPDIR=`pwd` make -s --no-print-directory -C $BENCH_DIR opt
 
 	if [ $? != 0 ]
 	then
 		echo
 		echo -e "\e[41m\033[1mError: Unable to optimize benchmark '$BENCH'\e[0m"
+		continue
+	fi
+
+	echo -e "\033[92m"
+	echo "  Execution"
+	echo "----------------"
+	echo -e -n "\033[0m"
+
+	RESULT=$(PEEPDIR=`pwd` make -s --no-print-directory -C $BENCH_DIR run)
+	EXPECTED=$(cat $BENCH_DIR/out1)
+
+	if [[ "$RESULT" == "$EXPECTED" ]]
+	then
+		echo -e "\e[42mExecution Successful\e[0m"
+	else
+		echo $EXPECTED
+		echo
+		echo $RESULT
+		echo -e "\e[41mExecution Failed\e[0m"
 		continue
 	fi
 
@@ -59,7 +80,7 @@ do
 
 	if [[ -z "$NORMAL" || -z "$OPT" ]]
 	then
-		echo -e "\e[41m\033[1mERROR\e[0m"
+		echo -e "\e[41m\033[1mError:\033[0m\e[41m Unable to load bytecode statistics\e[0m"
 		continue
 	fi
 
@@ -79,6 +100,7 @@ then
 	echo -e "\e[42mSuccessfully compiled all benchmarks\e[49m"
 else
 	echo -e "\e[41mError: Compiled $COUNT_COMPILED/$COUNT benchmarks\e[49m"
+	exit 1
 fi
 echo
 
@@ -87,7 +109,7 @@ OPT=$(grep -a code_length PeepholeBenchmarks/bench*/*.optdump | awk '{sum += $3}
 
 if [[ -z "$NORMAL" || -z "$OPT" ]]
 then
-	echo -e "\e[41m\033[1mError: Unable to load bytecode statistics\e[0m"
+	echo -e "\e[41m\033[1mError:\033[0m\e[41m Unable to load bytecode statistics\e[0m"
 	exit
 fi
 

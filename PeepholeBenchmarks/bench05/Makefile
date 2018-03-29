@@ -1,14 +1,14 @@
-all: clean
+all:
 	$(PEEPDIR)/joosc.sh *.java 
 
-opt: clean
+opt:
 	$(PEEPDIR)/joosc.sh -O *.java 
 
 java:
 	javac *.java
 
 clean:	
-	rm -rf *.class *.j *~ newout
+	rm -rf *.class *.j *~ newout *.dump *.optdump
 
 run:
 	java -classpath "$(PEEPDIR)/jooslib.jar:." DungeonGenerator < in1

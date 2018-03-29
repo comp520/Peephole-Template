@@ -33,7 +33,7 @@ public class JokeRoomAction extends RoomAction{
         JoosRandom rand;
         int n;
 
-        rand = new JoosRandom();
+        rand = new JoosRandom(1337);
         n = rand.nextInt() % 10;
         if (n < 0)
             n = -n;

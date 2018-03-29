@@ -19,7 +19,7 @@ public class FactorialRoomAction extends RoomAction{
             JoosRandom rand;
             int num;
 
-            rand = new JoosRandom();
+            rand = new JoosRandom(1337);
             num = rand.nextInt() % 13;
             if (num < 0)
                 num = -num;
