@@ -6,6 +6,12 @@ echo "====================================="
 echo -e -n "\033[0m"
 
 make -C JOOSA-src
+if [ $? != 0 ]
+then
+	echo -e "\e[41m\033[1mError:\033[0m\e[41m Unable to compile patterns file\e[0m"
+	exit
+fi
+
 rm -f PeepholeBenchmarks/bench*/*.*dump
 
 COUNT=0
@@ -33,8 +39,8 @@ do
 	if [ $? != 0 ]
 	then
 		echo
-		echo -e "\e[41m\033[1mError: Unable to compile benchmark '$BENCH'\e[0m"
-		continue
+		echo -e "\e[41m\033[1mError:\033[0m\e[41m Unable to compile benchmark '$BENCH'\e[0m"
+		exit
 	fi
 
 	echo -e "\033[92m"
@@ -47,8 +53,8 @@ do
 	if [ $? != 0 ]
 	then
 		echo
-		echo -e "\e[41m\033[1mError: Unable to optimize benchmark '$BENCH'\e[0m"
-		continue
+		echo -e "\e[41m\033[1mError:\033[0m\e[41m Unable to optimize benchmark '$BENCH'\e[0m"
+		exit
 	fi
 
 	echo -e "\033[92m"
