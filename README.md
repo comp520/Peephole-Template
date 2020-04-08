@@ -15,5 +15,5 @@ An introduction to the basics of peephole optimization using Java Bytecode and J
 * `joosc.sh`: Script that calls the joos compiler to generate the `.j` files and then calls jasmin to generate the `.class` files. You should be able to run those `.class` files with any Java system
 
 ### Convenience
-* `PeepholeBenchmarks/`: There are 6 benchmarks in this directory that you can use for testing your optimizations. Each benchmark contains a Makefile that you can use to compile. Optimizations are appled when invoking `make opt`. Note that you must set the $PEEPDIR environment variable to directly invoke the Makefile
+* `PeepholeBenchmarks/`: There are 6 benchmarks in this directory that you can use for testing your optimizations. Each benchmark contains a Makefile that you can use to compile. Optimizations are applied when invoking `make opt`. Note that you must set the $PEEPDIR environment variable to directly invoke the Makefile
 * `count.sh`: Script that compiles all benchmarks with/without optimization and reports the bytecode size in both cases. This will likely be the sole command you run to compile and test
